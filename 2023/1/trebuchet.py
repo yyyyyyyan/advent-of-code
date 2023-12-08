@@ -3,7 +3,7 @@ def trebuchet(puzzle_input):
     result = 0
     for line in input_lines:
         line_digits = [char for char in line if char.isdigit()]
-        if len(line_digits) >= 1:
+        if line_digits:
             calibration = int(line_digits[0] + line_digits[-1])
             result += calibration
     return result
